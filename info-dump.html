@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-color: rgb(0, 0, 0)
+            }
+
+            .info_dump
+            {
+                background-color: aqua;
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 60px;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 160px;
+                right: 0px;
+                width: 170px;
+                height: 100px;
+                position: fixed;
+                
+            }
+
+            .vedi_scheda
+            {
+                background-color: grey;
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 260px;
+                right: 0px;
+                width: 170px;
+                height: 114px;
+                position: fixed;
+            }
+
+            .inizio_turno
+            {
+                background-color: grey;
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 374px;
+                right: 0px;
+                width: 170px;
+                height: 114px;
+                position: fixed;
+            }
+
+            .fine_turno
+            {
+                background-color: orange;
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 490px;
+                right: 0px;
+                width: 170px;
+                height: 114px;
+                position: fixed;
+            }
+
+            .chiudi_dump
+            {
+                background-color: rgb(17, 206, 0);
+                color: white;
+                font-size: larger;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 1180px;
+                height: 40px;
+                position: fixed;
+                z-index: 1000;
+            }
+
+            .titolo
+            {
+                background-color: white;
+                border: 1px solid black; 
+                text-align: center;
+                font-size: medium;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .evento
+            {
+                background-color: grey;
+                border: 1px solid black; 
+                text-align: left;
+                font-size: medium;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <img style="position: fixed; top:0; right:0;" src="gps.jpg">
+        <button class="info_dump"><strong>Info/DUMP</strong></button>
+        <button class="vedi_scheda"><strong>Vedi scheda</strong></button>
+        <button class="inizio_turno"><strong>Inizio Turno</strong></button>
+        <a href="scelta_mezzo.html"><button class="fine_turno"><strong>Fine Turno</strong></button></a>
+        <a href="frontalino_base.html"><button class="chiudi_dump"><strong>Chiudi Finestra Dump</strong></button></a>
+
+        <table style="position: absolute; top:41px; right: 171px; left: 0px; border-collapse: collapse; width: 87.5%; height: 100%;
+                    "> 
+            <thead>
+                <tr>
+                    <th class="titolo" style="width: 1%">0</th>
+                    <th class="titolo" style="width: 5%">Codice</th>
+                    <th class="titolo" style="width: 4%">Prov</th>
+                    <th class="titolo" style="width: 11%">Località-Comune</th>
+                    <th class="titolo" style="width: 7%">Indirizzo</th>
+                    <th class="titolo" style="width: 3%">Evento</th>
+                    <th class="titolo" style="width: 7%">Mezzo</th>
+                    <th class="titolo" style="width: 4%">Fase</th>
+                    <th class="titolo" style="width: 4%"><img src="bandierina.png"></th>
+                    <th class="titolo" style="width: 4%"><img src="partito_sede.png"></th>
+                    <th class="titolo" style="width: 4%"><img src="arrivo_posto.png"></th>
+                    <th class="titolo" style="width: 4%"><img src="partenza_posto.png"></th>
+                    <th class="titolo" style="width: 4%"><img src="arrivo_ps.png"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento" style="background-color: rgba(83, 100, 252, 0.61)"></th>
+                    <th class="evento" style="color: red; background-color: rgba(83, 100, 252, 0.61)">TIU*R</th>
+                    <th class="evento" style="color: red; background-color: rgba(83, 100, 252, 0.61)">RE</th>
+                    <th class="evento" style="color: red; background-color: rgba(83, 100, 252, 0.61)">GUASTALLA</th>
+                    <th class="evento" style="color: red; background-color: rgba(83, 100, 252, 0.61)">OSP GUASTALLA - OSP ASMN RE RIANIMAZIONE </th>
+                    <th class="evento" style="color: blue; background-color: rgba(83, 100, 252, 0.61); text-decoration: underline; text-align: center;">2525786</th>
+                    <th class="evento">REGUASTALLA_2PD REGUASTALLA_INDIA</th>
+                    <th class="evento">PS 11:04 PS 11:05</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"><img src="msa.png"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: blue">KC02R</th>
+                    <th class="evento" style="color: blue">RE</th>
+                    <th class="evento" style="color: blue">BUSANA</th>
+                    <th class="evento" style="color: blue">VIA BOSCO, 7</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525768</th>
+                    <th class="evento">REBUSANA_1 RECMONTI_40 ELI_PAVULLO</th>
+                    <th class="evento">AR 10:48 AR 11:07 AR 11:09</th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"><img src="msa.png"><img height="50px" width="50px" src="eli.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+            
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: red">SC01R</th>
+                    <th class="evento" style="color: red">RE</th>
+                    <th class="evento" style="color: red">CAMPAGNOLA EMILIA</th>
+                    <th class="evento" style="color: red">VIA VETTIGANO SP30, 24</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525785</th>
+                    <th class="evento">RENOVELLARA_40 REFABBRICO_1 ELI_PARMA</th>
+                    <th class="evento">AR 10:57 AR 11:01 <br> P <br> 10:55 </th>
+                    <th class="evento"></th>
+                    <th class="evento"><br><br><br><br><br><br><br><img height="50px" width="50px" src="eli.png"></th>
+                    <th class="evento"><img src="msa.png"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+           
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: red">LC04R</th>
+                    <th class="evento" style="color: red">RE</th>
+                    <th class="evento" style="color: red">REGGIO EMILIA</th>
+                    <th class="evento" style="color: red">VIA CISALPINA, 12</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525746</th>
+                    <th class="evento">REGGIO_CRI_2 REGGIO_40</th>
+                    <th class="evento">CA 11:04 CA 11:04</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"><img src="msa.png"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: yellow">KC04G</th>
+                    <th class="evento" style="color: yellow">RE</th>
+                    <th class="evento" style="color: yellow">POVIGLIO</th>
+                    <th class="evento" style="color: yellow">VIA G. MARCONI, 1</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525737</th>
+                    <th class="evento">REPOVIGLIO_1 REPOVIGLIO_INDIA</th>
+                    <th class="evento">AR 10:45 AR 10:45</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"><img src="msa.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: yellow">LC01G</th>
+                    <th class="evento" style="color: yellow">RE</th>
+                    <th class="evento" style="color: yellow">COVIOLO - REGGIO EMILIA</th>
+                    <th class="evento" style="color: yellow">VIA GIOTTO BONDONE, 4</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525792</th>
+                    <th class="evento">REGGIO_CV_1</th>
+                    <th class="evento">CA 11:07</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: yellow">KC04G</th>
+                    <th class="evento" style="color: yellow">RE</th>
+                    <th class="evento" style="color: yellow">RUBIERA</th>
+                    <th class="evento" style="color: yellow">VIA D. ALIGHIERI, 9</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525714</th>
+                    <th class="evento">RERUBIERA_1 RESCANDIANO_INDIA</th>
+                    <th class="evento">P 11:04 P 11:03</th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"><img src="msa.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: green">PC01V</th>
+                    <th class="evento" style="color: green">RE</th>
+                    <th class="evento" style="color: green">BIBBIANO</th>
+                    <th class="evento" style="color: green">VIA GIBUTI, 5</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525721</th>
+                    <th class="evento">RECANOSSA_1</th>
+                    <th class="evento">P 11:02</th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: green">KC02V</th>
+                    <th class="evento" style="color: green">RE</th>
+                    <th class="evento" style="color: green">GUASTALLA</th>
+                    <th class="evento" style="color: green">VIA 25 APRILE, 21</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525714</th>
+                    <th class="evento">REGUASTALLA_1</th>
+                    <th class="evento">CA 10:58</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: green">SC07V</th>
+                    <th class="evento" style="color: green">RE</th>
+                    <th class="evento" style="color: green">REGGIO EMILIA</th>
+                    <th class="evento" style="color: green">VIA G. TURRI, 42</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525782</th>
+                    <th class="evento">REGGIO_CRI_1</th>
+                    <th class="evento">AR 10:44</th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+
+            <thead>
+                <tr>
+                    <th class="evento"></th>
+                    <th class="evento" style="color: green">ZC01V</th>
+                    <th class="evento" style="color: green">RE</th>
+                    <th class="evento" style="color: green">TOANO</th>
+                    <th class="evento" style="color: green">SENTIERO BALZE DI MALPASO</th>
+                    <th class="evento" style="color: blue; text-decoration: underline; text-align: center;">2525773</th>
+                    <th class="evento">REVILLA_1 SAER_RE</th>
+                    <th class="evento">P 10:18</th>
+                    <th class="evento"></th>
+                    <th class="evento"><img src="msb.png"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                    <th class="evento"></th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>

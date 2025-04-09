@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body
+            {
+                background-color: rgb(0, 0, 0)
+            }
+
+            .info_dump
+            {
+                background-color: aqua;
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                line-height: 60px;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 160px;
+                right: 0px;
+                height: 60px;
+                width: 128px;
+                
+            }
+
+            .vedi_scheda
+            {
+                background-color: rgb(141, 23, 131);
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 260px;
+                right: 0px;
+                width: 170px;
+                height: 115px;
+            }
+
+            .stati
+            {
+                background-color: rgb(230, 195, 0);
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 375px;
+                right: 0px;
+                width: 170px;
+                height: 115px;
+            }
+
+            .chiusura
+            {
+                background-color: rgb(218, 141, 0);
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 490px;
+                right: 0px;
+                width: 170px;
+                height: 115px;
+            }
+
+            .cartellino_verde
+            {
+                background-color: rgb(0, 212, 0);
+                color:black;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 50px;
+                left: 7px;
+                width: 870px;
+                height: 35px;
+            }
+
+            
+            .dispositivi
+            {
+                background-color: grey;
+                color: white;
+                font-size: larger;
+                padding: 1.3rem;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 50px;
+                left: 900px;
+                width: 250px;
+                height: 35px;
+            }
+
+            .partecipano
+            {
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 2px solid;
+                border-color: white;
+                text-align: center;
+                overflow: auto;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <img style="position: absolute; top:0; left:0;" src="rete.jpg">
+        <img style="position: absolute; top:0; right:-10px;" src="gps_missione.png">
+        <a href="info-dump_missione.html" class="info_dump"><strong>Info/DUMP</strong></a>
+        <button class="vedi_scheda"><strong>Vedi scheda</strong></button>
+        <button class="stati" id="stato"><strong>Partenza</strong></button>
+        <a href="frontalino_base.html"><button class="chiusura" ><strong>Chiusura</strong></button></a>
+        <p id="scritta_stato" style="font-family: Arial, Helvetica, sans-serif; color:blue; text-align: center; font-size: larger; font-weight:bolder;"></p>
+        <br><br><br><br>
+
+        <button id="dettagli_button" class="cartellino_verde">Evento 25001863 YC01V</button>
+        <button class="dispositivi">BASE</button>
+        <h2 style="text-align: left; color: rgb(0, 112, 241); font-family: Arial, Helvetica, sans-serif;">Comune: <span style="color: aliceblue; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">RIO SALICETO</span></h2>
+        <h2 style="text-align: left; color: rgb(0, 112, 241); font-family: Arial, Helvetica, sans-serif;">Località: <span style="color: aliceblue; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">RIO SALICETO</span></h2>
+        <h2 style="text-align: left; color: rgb(0, 112, 241); font-family: Arial, Helvetica, sans-serif;">Strada: <span style="color: aliceblue; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">PIAZZA GIOSUE CARDUCCI 18</span></h2>
+        <h2 style="text-align: left; color: rgb(0, 112, 241); font-family: Arial, Helvetica, sans-serif;">Riferimento: <span style="color: aliceblue; text-transform: uppercase; font-family: Arial, Helvetica, sans-serif;">CAMPI DA TENNIS</span></h2>
+        
+        <br><br>
+        <h2 style="text-align: left; color: rgb(0, 112, 241); font-family: Arial, Helvetica, sans-serif;">Note emergenza/Intervista:</h2>
+        <h2 style="font-family: Arial, Helvetica, sans-serif; color: aliceblue;">POSSIBILE FRATTURA BRACCIO DX DOPO CADUTA</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">VEDE PAZIENTE SI</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">COSCIENTE SI</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">VEDE ACCADUTO SI</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">VISITATO NO</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">RESPIRA SI</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">, età 20 ANNI</h2></h2> 
+        <br>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue"></h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue"> SESSO F</h2>
+        <h2 style="display: inline; font-family: Arial, Helvetica, sans-serif; color: aliceblue">, UNICO PAZIENTE COINVOLTO 1 </h2>
+    </body>
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            var stato = document.getElementById('stato');
+            var scritta_stato = document.getElementById('scritta_stato');
+
+            stato.addEventListener('click', function() {
+                if (stato.innerText === 'Partenza') {
+                    stato.innerHTML = '<strong>Sul posto</strong>';
+                    scritta_stato.innerText = 'Ultimo stato inviato: Partenza';
+                } else if (stato.innerText === 'Sul posto') {
+                    stato.innerHTML = '<strong>Partenza dal posto</strong>';
+                    scritta_stato.innerText = 'Ultimo stato inviato: Sul posto';
+                } else if (stato.innerText === 'Partenza dal posto') {
+                    stato.innerHTML = '<strong>Arrivo PS</strong>';
+                    scritta_stato.innerText = 'Ultimo stato inviato: Partenza dal posto';
+                } else if (stato.innerText === 'Arrivo PS') {
+                    stato.innerHTML = '<strong></strong>';
+                    scritta_stato.innerText = 'Ultimo stato inviato: Arrivo in PS';
+                }
+        
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Ottieni la data e l'ora attuali
+            var now = new Date();
+            var giorno = String(now.getDate()).padStart(2, '0');
+            var mese = String(now.getMonth() + 1).padStart(2, '0'); // I mesi partono da 0
+            var anno = now.getFullYear();
+            var ore = String(now.getHours()).padStart(2, '0');
+            var minuti = String(now.getMinutes()).padStart(2, '0');
+            var secondi = String(now.getSeconds()).padStart(2, '0');
+            var dataOra = `${giorno}/${mese}/${anno} ${ore}:${minuti}:${secondi}`;
+
+            // Aggiorna il testo del pulsante dettagli_button
+            var dettagliButton = document.getElementById('dettagli_button');
+            dettagliButton.innerText = `Evento ${dataOra} YC01V`;
+        });
+    </script>
+</html>
